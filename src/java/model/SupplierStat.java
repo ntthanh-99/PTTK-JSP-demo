@@ -1,0 +1,43 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package model;
+
+import java.util.Date;
+
+/**
+ *
+ * @author Tien Thanh
+ */
+public class SupplierStat extends Supplier{
+    private int amount;
+    private int income;
+
+    public SupplierStat() {
+    }
+
+    public SupplierStat(int amount, int income, int id, String name, String description, String address, String phone, Date createdDate, Date modifiedDate) {
+        super(id, name, description, address, phone, createdDate, modifiedDate);
+        this.amount = amount;
+        this.income = income;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public int getIncome() {
+        return income;
+    }
+
+    public void setIncome(int income) {
+        this.income = income;
+    }
+    
+}
